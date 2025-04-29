@@ -1,0 +1,11 @@
+{
+    "extends": "solhint:all",
+    "rules": {
+        "comprehensive-interface": "off",
+        "foundry-test-functions": "off",
+        "func-visibility": "off",
+        "gas-named-return-values": "off",
+        "ordering": "off",
+        "private-vars-leading-underscore": "off"
+    }
+}

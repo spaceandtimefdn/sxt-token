@@ -1,0 +1,32 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["dependencies"]
+optimize = true
+optimizer_runs = 20000
+via_ir = true
+fs_permissions = [
+    { access = "read", path = "./script/input" },
+    { access = "read", path = "./test/input" },
+]
+no-match-coverage = "script"
+
+remappings = [
+    "@openzeppelin/contracts/=dependencies/@openzeppelin-contracts-5.2.0/",
+    "forge-std-1.9.6/=dependencies/forge-std-1.9.6/",
+    "murky/=dependencies/murky-0.1.0/src/"
+]
+
+[dependencies]
+forge-std = { version = "1.9.6" }
+"@openzeppelin-contracts" = { version = "5.2.0" }
+"murky" = { version = "0.1.0" }
+
+[rpc_endpoints]
+local = "${ETH_RPC_URL}"
+sepolia = "${ETH_RPC_URL}"
+mainnet = "${ETH_RPC_URL}"
+
+[etherscan]
+mainnet = { key = "${ETHERSCAN_API_KEY}" }
+sepolia = { key = "${ETHERSCAN_API_KEY}" }

@@ -1,0 +1,4 @@
+@openzeppelin-contracts-5.2.0/=dependencies/@openzeppelin-contracts-5.2.0/
+@openzeppelin/contracts/=dependencies/@openzeppelin-contracts-5.2.0/
+forge-std-1.9.6/=dependencies/forge-std-1.9.6/
+murky/=dependencies/murky-0.1.0/src/
